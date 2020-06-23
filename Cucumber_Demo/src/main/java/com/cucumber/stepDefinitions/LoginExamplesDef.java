@@ -23,10 +23,10 @@ public class LoginExamplesDef {
 		driver.findElement(By.id("txtUsername")).sendKeys(uname);
 		driver.findElement(By.id("txtPassword")).sendKeys(upwd);}
 
-	/*@When("^click submit button$")
+	/* @When("^click submit button$")
 	public void click_submit_button() throws Throwable {
 		driver.findElement(By.id("btnLogin")).click();
-	}*/
+	} */
 
 
 }

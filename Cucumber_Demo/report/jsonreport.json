@@ -1,0 +1,69 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 10,
+        "name": "Login page validation with Data table with Header # When we have Examples option in feature the scenario should be Scenario Outline",
+        "description": "",
+        "id": "login-feature-for-orange-hrm-application-with-data-table-with-header;login-page-validation-with-data-table-with-header-#-when-we-have-examples-option-in-feature-the-scenario-should-be-scenario-outline;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 31661430100,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Navigate to login page",
+            "match": {
+              "location": "LoginExamplesDef.navigate_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 875966700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "enter \"Admin\" and \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 7
+                },
+                {
+                  "val": "admin123",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginExamplesDef.enter_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "click submit button",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Login feature for Orange HRM Application with Data table with Header",
+    "description": "",
+    "id": "login-feature-for-orange-hrm-application-with-data-table-with-header",
+    "keyword": "Feature",
+    "uri": "FeatureFiles/loginPagewithExamples.feature"
+  }
+]
