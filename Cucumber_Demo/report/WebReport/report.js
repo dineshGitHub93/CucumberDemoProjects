@@ -1,100 +1,71 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("loginPagewithExamples.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("loginPage.feature");
 formatter.feature({
   "line": 2,
-  "name": "Login feature for Orange HRM Application with Data table with Header",
+  "name": "To Verify page navigation of Guru99 Demo site",
   "description": "",
-  "id": "login-feature-for-orange-hrm-application-with-data-table-with-header",
+  "id": "to-verify-page-navigation-of-guru99-demo-site",
   "keyword": "Feature",
   "tags": [
     {
       "line": 1,
-      "name": "@simplelogin"
+      "name": "@loginwithmultiplescenario"
     }
   ]
-});
-formatter.scenarioOutline({
-  "line": 3,
-  "name": "Login page validation with Data table with Header # When we have Examples option in feature the scenario should be Scenario Outline",
-  "description": "",
-  "id": "login-feature-for-orange-hrm-application-with-data-table-with-header;login-page-validation-with-data-table-with-header-#-when-we-have-examples-option-in-feature-the-scenario-should-be-scenario-outline",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 4,
-  "name": "Navigate to login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 5,
-  "name": "enter \"\u003cuserName\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 6,
-  "name": "click submit button",
-  "keyword": "And "
-});
-formatter.examples({
-  "line": 8,
-  "name": "",
-  "description": "",
-  "id": "login-feature-for-orange-hrm-application-with-data-table-with-header;login-page-validation-with-data-table-with-header-#-when-we-have-examples-option-in-feature-the-scenario-should-be-scenario-outline;",
-  "rows": [
-    {
-      "cells": [
-        "userName",
-        "password"
-      ],
-      "line": 10,
-      "id": "login-feature-for-orange-hrm-application-with-data-table-with-header;login-page-validation-with-data-table-with-header-#-when-we-have-examples-option-in-feature-the-scenario-should-be-scenario-outline;;1"
-    },
-    {
-      "cells": [
-        "Admin",
-        "admin123"
-      ],
-      "line": 11,
-      "id": "login-feature-for-orange-hrm-application-with-data-table-with-header;login-page-validation-with-data-table-with-header-#-when-we-have-examples-option-in-feature-the-scenario-should-be-scenario-outline;;2"
-    }
-  ],
-  "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 11,
-  "name": "Login page validation with Data table with Header # When we have Examples option in feature the scenario should be Scenario Outline",
+  "line": 5,
+  "name": "Login page Verification with valid credentilas",
   "description": "",
-  "id": "login-feature-for-orange-hrm-application-with-data-table-with-header;login-page-validation-with-data-table-with-header-#-when-we-have-examples-option-in-feature-the-scenario-should-be-scenario-outline;;2",
+  "id": "to-verify-page-navigation-of-guru99-demo-site;login-page-verification-with-valid-credentilas",
   "type": "scenario",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-      "line": 1,
-      "name": "@simplelogin"
+      "line": 4,
+      "name": "@loginwithvalidcredentials"
     }
   ]
 });
 formatter.step({
-  "line": 4,
-  "name": "Navigate to login page",
+  "line": 6,
+  "name": "user is entering Guru99 Demo",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 5,
-  "name": "enter \"Admin\" and \"admin123\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "When "
+  "line": 7,
+  "name": "enter the user name and password",
+  "keyword": "Then "
 });
 formatter.step({
-  "line": 6,
-  "name": "click submit button",
+  "line": 8,
+  "name": "click on submit button",
   "keyword": "And "
 });
+formatter.step({
+  "line": 9,
+  "name": "user should navigates to home page of Guru99 Demo",
+  "keyword": "Then "
+});
 formatter.match({
-  "location": "LoginExamplesDef.navigate_to_login_page()"
+  "arguments": [
+    {
+      "val": "99",
+      "offset": 21
+    }
+  ],
+  "location": "LoginDefinitions.user_is_entering_Guru_Demo(int)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "LoginDefinitions.enter_the_user_name_and_password()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "LoginDefinitions.click_on_submit_button()"
 });
 formatter.result({
   "status": "skipped"
@@ -102,21 +73,83 @@ formatter.result({
 formatter.match({
   "arguments": [
     {
-      "val": "Admin",
-      "offset": 7
-    },
-    {
-      "val": "admin123",
-      "offset": 19
+      "val": "99",
+      "offset": 42
     }
   ],
-  "location": "LoginExamplesDef.enter_and(String,String)"
+  "location": "LoginDefinitions.user_should_navigates_to_home_page_of_Guru_Demo(int)"
 });
 formatter.result({
   "status": "skipped"
 });
-formatter.match({});
+formatter.scenario({
+  "line": 12,
+  "name": "Login page Verification with invalid credentials",
+  "description": "",
+  "id": "to-verify-page-navigation-of-guru99-demo-site;login-page-verification-with-invalid-credentials",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 11,
+      "name": "@loginwithinvalidcredentials"
+    }
+  ]
+});
+formatter.step({
+  "line": 13,
+  "name": "user is entering Guru99 Demo",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 14,
+  "name": "enter the user name and password",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 15,
+  "name": "click on submit button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "user should navigates to home page of Guru99 Demo",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "99",
+      "offset": 21
+    }
+  ],
+  "location": "LoginDefinitions.user_is_entering_Guru_Demo(int)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
+});
+formatter.match({
+  "location": "LoginDefinitions.enter_the_user_name_and_password()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "LoginDefinitions.click_on_submit_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "99",
+      "offset": 42
+    }
+  ],
+  "location": "LoginDefinitions.user_should_navigates_to_home_page_of_Guru_Demo(int)"
+});
+formatter.result({
+  "status": "skipped"
 });
 });

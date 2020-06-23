@@ -3,21 +3,27 @@
     "line": 2,
     "elements": [
       {
-        "line": 11,
-        "name": "Login page validation with Data table with Header # When we have Examples option in feature the scenario should be Scenario Outline",
+        "line": 5,
+        "name": "Login page Verification with valid credentilas",
         "description": "",
-        "id": "login-feature-for-orange-hrm-application-with-data-table-with-header;login-page-validation-with-data-table-with-header-#-when-we-have-examples-option-in-feature-the-scenario-should-be-scenario-outline;;2",
+        "id": "to-verify-page-navigation-of-guru99-demo-site;login-page-verification-with-valid-credentilas",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
               "status": "skipped"
             },
-            "line": 4,
-            "name": "Navigate to login page",
+            "line": 6,
+            "name": "user is entering Guru99 Demo",
             "match": {
-              "location": "LoginExamplesDef.navigate_to_login_page()"
+              "arguments": [
+                {
+                  "val": "99",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginDefinitions.user_is_entering_Guru_Demo(int)"
             },
             "keyword": "Given "
           },
@@ -25,54 +31,131 @@
             "result": {
               "status": "skipped"
             },
-            "line": 5,
-            "name": "enter \"Admin\" and \"admin123\"",
+            "line": 7,
+            "name": "enter the user name and password",
             "match": {
-              "arguments": [
-                {
-                  "val": "Admin",
-                  "offset": 7
-                },
-                {
-                  "val": "admin123",
-                  "offset": 19
-                }
-              ],
-              "location": "LoginExamplesDef.enter_and(String,String)"
+              "location": "LoginDefinitions.enter_the_user_name_and_password()"
             },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "When "
+            "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 6,
-            "name": "click submit button",
-            "match": {},
+            "line": 8,
+            "name": "click on submit button",
+            "match": {
+              "location": "LoginDefinitions.click_on_submit_button()"
+            },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user should navigates to home page of Guru99 Demo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "99",
+                  "offset": 42
+                }
+              ],
+              "location": "LoginDefinitions.user_should_navigates_to_home_page_of_Guru_Demo(int)"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 1,
-            "name": "@simplelogin"
+            "line": 4,
+            "name": "@loginwithvalidcredentials"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Login page Verification with invalid credentials",
+        "description": "",
+        "id": "to-verify-page-navigation-of-guru99-demo-site;login-page-verification-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user is entering Guru99 Demo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "99",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginDefinitions.user_is_entering_Guru_Demo(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "enter the user name and password",
+            "match": {
+              "location": "LoginDefinitions.enter_the_user_name_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "click on submit button",
+            "match": {
+              "location": "LoginDefinitions.click_on_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user should navigates to home page of Guru99 Demo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "99",
+                  "offset": 42
+                }
+              ],
+              "location": "LoginDefinitions.user_should_navigates_to_home_page_of_Guru_Demo(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@loginwithinvalidcredentials"
           }
         ]
       }
     ],
-    "name": "Login feature for Orange HRM Application with Data table with Header",
+    "name": "To Verify page navigation of Guru99 Demo site",
     "description": "",
-    "id": "login-feature-for-orange-hrm-application-with-data-table-with-header",
+    "id": "to-verify-page-navigation-of-guru99-demo-site",
     "keyword": "Feature",
-    "uri": "loginPagewithExamples.feature",
+    "uri": "loginPage.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@simplelogin"
+        "name": "@loginwithmultiplescenario"
       }
     ]
   }

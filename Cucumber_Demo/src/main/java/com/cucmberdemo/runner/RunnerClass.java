@@ -33,12 +33,13 @@ plugin= {"html:report/WebReport", "json:report/jsonreport.json", "junit:report/c
  * "format" is replaced a word by "plugin" 
  *
  */
-tags= {"@simplelogin"}
+tags= {"@loginwithmultiplescenario"}
 /**
  * Tags at feature file level
  * Tags at scenario /scenario outline level
  * Ignore the tests using tags
  * club different tags and run
+ * "~" tilde option is prevent the execution of respective feature file where we have placed 
  */
 )
 public class RunnerClass {
