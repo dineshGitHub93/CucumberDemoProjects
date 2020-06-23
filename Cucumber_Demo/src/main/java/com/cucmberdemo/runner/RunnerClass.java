@@ -6,9 +6,9 @@ import cucumber.api.CucumberOptions;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(features={"FeatureFiles/loginPagewithExamples.feature"}, 
+@CucumberOptions(features={"FeatureFiles"}, 
 glue= {"com.cucumber.stepDefinitions"},
-dryRun= false,
+dryRun= true,
 /**
  * If dryRun is false it will turn on the execution.
  * It will generate the skeleton for missed feature file.
@@ -27,11 +27,18 @@ monochrome= true,
  * when monochrome option is false the output will be " 3 Steps ([36m2 skipped[0m, [33m1 undefined[0m) "
  *
  */
-plugin= {"html:report/WebReport", "json:report/jsonreport.json", "junit:report/cucumberXml.xml"}
+plugin= {"html:report/WebReport", "json:report/jsonreport.json", "junit:report/cucumberXml.xml"},
 /**
  * format option is help us to generate the different reports 
  * "format" is replaced a word by "plugin" 
  *
+ */
+tags= {"@simplelogin"}
+/**
+ * Tags at feature file level
+ * Tags at scenario /scenario outline level
+ * Ignore the tests using tags
+ * club different tags and run
  */
 )
 public class RunnerClass {
