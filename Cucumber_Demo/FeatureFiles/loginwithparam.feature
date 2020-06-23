@@ -1,3 +1,4 @@
+@DataDriven
 Feature: Login feature for Orange HRM Application with Parameter
 Scenario: Login page validation with Parameter
 Given user should to navigate login page

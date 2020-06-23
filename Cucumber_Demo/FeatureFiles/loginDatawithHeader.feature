@@ -1,3 +1,4 @@
+@DataDriven
 Feature: Login feature for Orange HRM Application with Data table with Header
 Scenario: Login page validation with Data table with Header
 Given Enter the url navigate login page

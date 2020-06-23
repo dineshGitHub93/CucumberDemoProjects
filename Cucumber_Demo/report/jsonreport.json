@@ -3,6 +3,81 @@
     "line": 2,
     "elements": [
       {
+        "line": 3,
+        "name": "Login page validation with Data table with Header",
+        "description": "",
+        "id": "login-feature-for-orange-hrm-application-with-data-table-with-header;login-page-validation-with-data-table-with-header",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "Enter the url navigate login page",
+            "match": {
+              "location": "LoginStepDefwithHeader.enter_the_url_navigate_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "enter the below userName and password",
+            "match": {
+              "location": "LoginStepDefwithHeader.enter_the_below_userName_and_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userName",
+                  "userPassword"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "Admin",
+                  "admin123"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "click on the submit button",
+            "match": {
+              "location": "LoginStepDefwithHeader.click_on_the_submit_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Login feature for Orange HRM Application with Data table with Header",
+    "description": "",
+    "id": "login-feature-for-orange-hrm-application-with-data-table-with-header",
+    "keyword": "Feature",
+    "uri": "loginDatawithHeader.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@DataDriven"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
         "line": 5,
         "name": "Login page Verification with valid credentilas",
         "description": "",
@@ -156,6 +231,165 @@
       {
         "line": 1,
         "name": "@loginwithmultiplescenario"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Login page validation with Data table with out Header",
+        "description": "",
+        "id": "login-feature-for-orange-hrm-application-with-data-table-with-out-header;login-page-validation-with-data-table-with-out-header",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "user can to navigate login page",
+            "match": {
+              "location": "DataTableWOHDef.user_can_to_navigate_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user can enter the valid below credentials",
+            "match": {
+              "location": "DataTableWOHDef.user_can_enter_the_valid_below_credentials(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Admin",
+                  "admin123"
+                ],
+                "line": 6
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user can clicks on the login button",
+            "match": {
+              "location": "DataTableWOHDef.user_can_clicks_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user can naviated to homepage",
+            "match": {
+              "location": "DataTableWOHDef.user_can_naviated_to_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login feature for Orange HRM Application with Data table with out Header",
+    "description": "",
+    "id": "login-feature-for-orange-hrm-application-with-data-table-with-out-header",
+    "keyword": "Feature",
+    "uri": "loginwithdataDriven.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@DataDriven"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Login page validation with Parameter",
+        "description": "",
+        "id": "login-feature-for-orange-hrm-application-with-parameter;login-page-validation-with-parameter",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "user should to navigate login page",
+            "match": {
+              "location": "LoginStepDefWithParam.user_should_to_navigate_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user enter the valid userName as \"Admin\" and Password as \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 38
+                },
+                {
+                  "val": "admin123",
+                  "offset": 62
+                }
+              ],
+              "location": "LoginStepDefWithParam.the_user_enter_the_valid_userName_as_and_Password_as(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "clicks the login button",
+            "match": {
+              "location": "LoginStepDefWithParam.clicks_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user is able to naviated to homepage",
+            "match": {
+              "location": "LoginStepDefWithParam.user_is_able_to_naviated_to_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login feature for Orange HRM Application with Parameter",
+    "description": "",
+    "id": "login-feature-for-orange-hrm-application-with-parameter",
+    "keyword": "Feature",
+    "uri": "loginwithparam.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@DataDriven"
       }
     ]
   }
