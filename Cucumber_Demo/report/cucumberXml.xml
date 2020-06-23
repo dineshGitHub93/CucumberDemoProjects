@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="1" time="32.537397">
-    <testcase classname="Login feature for Orange HRM Application with Data table with Header" name="Login page validation with Data table with Header # When we have Examples option in feature the scenario should be Scenario Outline" time="32.537397">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="1" time="0">
+    <testcase classname="Login feature for Orange HRM Application with Data table with Header" name="Login page validation with Data table with Header # When we have Examples option in feature the scenario should be Scenario Outline" time="0">
         <skipped>
-            <![CDATA[Given Navigate to login page................................................passed
-When enter "Admin" and "admin123"...........................................passed
+            <![CDATA[Given Navigate to login page................................................skipped
+When enter "Admin" and "admin123"...........................................skipped
 And click submit button.....................................................undefined
 ]]>
         </skipped>

@@ -1,13 +1,19 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("FeatureFiles/loginPagewithExamples.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("loginPagewithExamples.feature");
 formatter.feature({
-  "line": 1,
+  "line": 2,
   "name": "Login feature for Orange HRM Application with Data table with Header",
   "description": "",
   "id": "login-feature-for-orange-hrm-application-with-data-table-with-header",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@simplelogin"
+    }
+  ]
 });
 formatter.scenarioOutline({
-  "line": 2,
+  "line": 3,
   "name": "Login page validation with Data table with Header # When we have Examples option in feature the scenario should be Scenario Outline",
   "description": "",
   "id": "login-feature-for-orange-hrm-application-with-data-table-with-header;login-page-validation-with-data-table-with-header-#-when-we-have-examples-option-in-feature-the-scenario-should-be-scenario-outline",
@@ -15,22 +21,22 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 3,
+  "line": 4,
   "name": "Navigate to login page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 4,
+  "line": 5,
   "name": "enter \"\u003cuserName\u003e\" and \"\u003cpassword\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 5,
+  "line": 6,
   "name": "click submit button",
   "keyword": "And "
 });
 formatter.examples({
-  "line": 7,
+  "line": 8,
   "name": "",
   "description": "",
   "id": "login-feature-for-orange-hrm-application-with-data-table-with-header;login-page-validation-with-data-table-with-header-#-when-we-have-examples-option-in-feature-the-scenario-should-be-scenario-outline;",
@@ -40,7 +46,7 @@ formatter.examples({
         "userName",
         "password"
       ],
-      "line": 9,
+      "line": 10,
       "id": "login-feature-for-orange-hrm-application-with-data-table-with-header;login-page-validation-with-data-table-with-header-#-when-we-have-examples-option-in-feature-the-scenario-should-be-scenario-outline;;1"
     },
     {
@@ -48,27 +54,33 @@ formatter.examples({
         "Admin",
         "admin123"
       ],
-      "line": 10,
+      "line": 11,
       "id": "login-feature-for-orange-hrm-application-with-data-table-with-header;login-page-validation-with-data-table-with-header-#-when-we-have-examples-option-in-feature-the-scenario-should-be-scenario-outline;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 10,
+  "line": 11,
   "name": "Login page validation with Data table with Header # When we have Examples option in feature the scenario should be Scenario Outline",
   "description": "",
   "id": "login-feature-for-orange-hrm-application-with-data-table-with-header;login-page-validation-with-data-table-with-header-#-when-we-have-examples-option-in-feature-the-scenario-should-be-scenario-outline;;2",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@simplelogin"
+    }
+  ]
 });
 formatter.step({
-  "line": 3,
+  "line": 4,
   "name": "Navigate to login page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 4,
+  "line": 5,
   "name": "enter \"Admin\" and \"admin123\"",
   "matchedColumns": [
     0,
@@ -77,7 +89,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 5,
+  "line": 6,
   "name": "click submit button",
   "keyword": "And "
 });
@@ -85,8 +97,7 @@ formatter.match({
   "location": "LoginExamplesDef.navigate_to_login_page()"
 });
 formatter.result({
-  "duration": 31661430100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -102,8 +113,7 @@ formatter.match({
   "location": "LoginExamplesDef.enter_and(String,String)"
 });
 formatter.result({
-  "duration": 875966700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({});
 formatter.result({

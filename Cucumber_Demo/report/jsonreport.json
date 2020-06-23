@@ -1,9 +1,9 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 10,
+        "line": 11,
         "name": "Login page validation with Data table with Header # When we have Examples option in feature the scenario should be Scenario Outline",
         "description": "",
         "id": "login-feature-for-orange-hrm-application-with-data-table-with-header;login-page-validation-with-data-table-with-header-#-when-we-have-examples-option-in-feature-the-scenario-should-be-scenario-outline;;2",
@@ -12,10 +12,9 @@
         "steps": [
           {
             "result": {
-              "duration": 31661430100,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 3,
+            "line": 4,
             "name": "Navigate to login page",
             "match": {
               "location": "LoginExamplesDef.navigate_to_login_page()"
@@ -24,10 +23,9 @@
           },
           {
             "result": {
-              "duration": 875966700,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 4,
+            "line": 5,
             "name": "enter \"Admin\" and \"admin123\"",
             "match": {
               "arguments": [
@@ -52,10 +50,16 @@
             "result": {
               "status": "undefined"
             },
-            "line": 5,
+            "line": 6,
             "name": "click submit button",
             "match": {},
             "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@simplelogin"
           }
         ]
       }
@@ -64,6 +68,12 @@
     "description": "",
     "id": "login-feature-for-orange-hrm-application-with-data-table-with-header",
     "keyword": "Feature",
-    "uri": "FeatureFiles/loginPagewithExamples.feature"
+    "uri": "loginPagewithExamples.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@simplelogin"
+      }
+    ]
   }
 ]
