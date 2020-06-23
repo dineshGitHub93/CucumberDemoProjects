@@ -1,4 +1,4 @@
-@loginwithmultiplescenario
+@loginwithmultiplescenario @DataDriven
 Feature: To Verify page navigation of Guru99 Demo site
 
 @loginwithvalidcredentials

@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="0">
-    <testcase classname="Login feature for Orange HRM Application with Data table with Header" name="Login page validation with Data table with Header" time="0">
-        <system-out>
-            <![CDATA[Given Enter the url navigate login page.....................................skipped
-When enter the below userName and password..................................skipped
-And click on the submit button..............................................skipped
-]]>
-        </system-out>
-    </testcase>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0">
     <testcase classname="To Verify page navigation of Guru99 Demo site" name="Login page Verification with valid credentilas" time="0">
         <system-out>
             <![CDATA[Given user is entering Guru99 Demo..........................................skipped
@@ -23,24 +15,6 @@ Then user should navigates to home page of Guru99 Demo......................skip
 Then enter the user name and password.......................................skipped
 And click on submit button..................................................skipped
 Then user should navigates to home page of Guru99 Demo......................skipped
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Login feature for Orange HRM Application with Data table with out Header" name="Login page validation with Data table with out Header" time="0">
-        <system-out>
-            <![CDATA[Given user can to navigate login page.......................................skipped
-When user can enter the valid below credentials.............................skipped
-And user can clicks on the login button.....................................skipped
-Then user can naviated to homepage..........................................skipped
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Login feature for Orange HRM Application with Parameter" name="Login page validation with Parameter" time="0">
-        <system-out>
-            <![CDATA[Given user should to navigate login page....................................skipped
-When the user enter the valid userName as "Admin" and Password as "admin123".skipped
-And clicks the login button.................................................skipped
-Then user is able to naviated to homepage...................................skipped
 ]]>
         </system-out>
     </testcase>
