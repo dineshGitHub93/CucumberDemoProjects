@@ -13,7 +13,11 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 1095800,
+  "duration": 421601,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 462300,
   "status": "passed"
 });
 formatter.scenario({
@@ -43,25 +47,29 @@ formatter.match({
   "location": "ThanosStepDefinitionForHooks.thanos_has_the_Infinity_Stones()"
 });
 formatter.result({
-  "duration": 461765000,
+  "duration": 540972400,
   "status": "passed"
 });
 formatter.match({
   "location": "ThanosStepDefinitionForHooks.thanos_snaps_his_fingers()"
 });
 formatter.result({
-  "duration": 176300,
+  "duration": 160700,
   "status": "passed"
 });
 formatter.match({
   "location": "ThanosStepDefinitionForHooks.half_of_the_living_things_died()"
 });
 formatter.result({
-  "duration": 190000,
+  "duration": 173301,
   "status": "passed"
 });
 formatter.after({
-  "duration": 361100,
+  "duration": 109599,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 915301,
   "status": "passed"
 });
 });

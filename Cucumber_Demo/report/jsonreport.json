@@ -6,7 +6,16 @@
         "before": [
           {
             "result": {
-              "duration": 1095800,
+              "duration": 421601,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ThanosHook.beforetoBeforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 462300,
               "status": "passed"
             },
             "match": {
@@ -21,11 +30,20 @@
         "after": [
           {
             "result": {
-              "duration": 361100,
+              "duration": 109599,
               "status": "passed"
             },
             "match": {
               "location": "ThanosHook.afterSnapping()"
+            }
+          },
+          {
+            "result": {
+              "duration": 915301,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ThanosHook.aftertoAfterScenario()"
             }
           }
         ],
@@ -34,7 +52,7 @@
         "steps": [
           {
             "result": {
-              "duration": 461765000,
+              "duration": 540972400,
               "status": "passed"
             },
             "line": 4,
@@ -46,7 +64,7 @@
           },
           {
             "result": {
-              "duration": 176300,
+              "duration": 160700,
               "status": "passed"
             },
             "line": 5,
@@ -58,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 190000,
+              "duration": 173301,
               "status": "passed"
             },
             "line": 6,

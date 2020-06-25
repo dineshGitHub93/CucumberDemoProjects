@@ -7,7 +7,7 @@ import cucumber.api.CucumberOptions;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(features={"FeatureFiles"}, 
-glue= {"com.cucumber.stepDefinitions", "com.cucumber.hookdemo"},
+glue= {"com.cucumber.stepDefinitions","com.cucumber.hookdemo"},
 dryRun= false,
 /**
  * If dryRun is false it will turn on the execution.
