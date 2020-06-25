@@ -7,8 +7,8 @@ import cucumber.api.CucumberOptions;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(features={"FeatureFiles"}, 
-glue= {"com.cucumber.stepDefinitions"},
-dryRun= true,
+glue= {"com.cucumber.stepDefinitions", "com.cucumber.hookdemo"},
+dryRun= false,
 /**
  * If dryRun is false it will turn on the execution.
  * It will generate the skeleton for missed feature file.
@@ -33,7 +33,7 @@ plugin= {"html:report/WebReport", "json:report/jsonreport.json", "junit:report/c
  * "format" is replaced a word by "plugin" 
  *
  */
-tags= {"@loginwithmultiplescenario","@DataDriven"}
+tags= {"@Hooks"}
 /**
  * Tags at feature file level
  * Tags at scenario /scenario outline level

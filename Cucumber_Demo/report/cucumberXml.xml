@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0">
-    <testcase classname="To Verify page navigation of Guru99 Demo site" name="Login page Verification with valid credentilas" time="0">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.463588">
+    <testcase classname="Explaning about hook" name="Hook scenario Explanation" time="0.463588">
         <system-out>
-            <![CDATA[Given user is entering Guru99 Demo..........................................skipped
-Then enter the user name and password.......................................skipped
-And click on submit button..................................................skipped
-Then user should navigates to home page of Guru99 Demo......................skipped
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="To Verify page navigation of Guru99 Demo site" name="Login page Verification with invalid credentials" time="0">
-        <system-out>
-            <![CDATA[Given user is entering Guru99 Demo..........................................skipped
-Then enter the user name and password.......................................skipped
-And click on submit button..................................................skipped
-Then user should navigates to home page of Guru99 Demo......................skipped
+            <![CDATA[Given Thanos has the Infinity Stones........................................passed
+When Thanos snaps his fingers...............................................passed
+Then half of the living things died.........................................passed
 ]]>
         </system-out>
     </testcase>
