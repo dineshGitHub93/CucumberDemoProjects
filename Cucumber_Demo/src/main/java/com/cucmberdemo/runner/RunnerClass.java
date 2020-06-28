@@ -33,7 +33,7 @@ plugin= {"html:report/WebReport", "json:report/jsonreport.json", "junit:report/c
  * "format" is replaced a word by "plugin" 
  *
  */
-tags= {"@Hooks"}
+tags= {"@TaggedHooks"}
 /**
  * Tags at feature file level
  * Tags at scenario /scenario outline level
