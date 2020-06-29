@@ -7,7 +7,7 @@ import cucumber.api.CucumberOptions;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(features={"FeatureFiles"}, 
-glue= {"com.cucumber.stepDefinitions","com.cucumber.hookdemo"},
+glue= {"com.cucumber.stepDefinitions", "com.cucumber.hookdemo"},
 dryRun= false,
 /**
  * If dryRun is false it will turn on the execution.
@@ -33,7 +33,7 @@ plugin= {"html:report/WebReport", "json:report/jsonreport.json", "junit:report/c
  * "format" is replaced a word by "plugin" 
  *
  */
-tags= {"@TaggedHooks"}
+tags= {"@Backgroundexamples"}
 /**
  * Tags at feature file level
  * Tags at scenario /scenario outline level

@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.543272">
-    <testcase classname="Test Tagged Hooks" name="This is First Scenario" time="0.536079">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.473817">
+    <testcase classname="To explain the usage of background" name="To study Medicine" time="0.468444">
         <system-out>
-            <![CDATA[Given this is the first step................................................passed
-When this is the scound step................................................passed
-Then This is the third step.................................................passed
+            <![CDATA[Given The Student finished high school......................................passed
+Given The Student finished higher secoundary school.........................passed
+Given the student apply for the Medical course..............................passed
+When the student cleared the entrance exam..................................passed
+Then the student is eligible for joining any Medical institute..............passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Test Tagged Hooks" name="This is Secound Scenario" time="0.002979">
+    <testcase classname="To explain the usage of background" name="To study Engineering" time="0.005373">
         <system-out>
-            <![CDATA[Given this is the first step................................................passed
-When this is the scound step................................................passed
-Then This is the third step.................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Test Tagged Hooks" name="This is Third Scenario" time="0.004214">
-        <system-out>
-            <![CDATA[Given this is the first step................................................passed
-When this is the scound step................................................passed
-Then This is the third step.................................................passed
+            <![CDATA[Given The Student finished high school......................................passed
+Given The Student finished higher secoundary school.........................passed
+Given the student applied for the Engineering Course........................passed
+When the student has a sayable cut off......................................passed
+Then the student is eligible for joining any Engineering institute..........passed
 ]]>
         </system-out>
     </testcase>

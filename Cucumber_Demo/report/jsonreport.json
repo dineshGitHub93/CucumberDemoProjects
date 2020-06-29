@@ -3,103 +3,35 @@
     "line": 2,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 1672000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ThanosHook.beforetoBeforeScenario()"
-            }
-          },
-          {
-            "result": {
-              "duration": 290300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ThanosHook.beforeSnapping()"
-            }
-          },
-          {
-            "result": {
-              "duration": 278800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHookDemo.executeBeforeFirstScenario()"
-            }
-          }
-        ],
-        "line": 5,
-        "name": "This is First Scenario",
+        "line": 4,
+        "name": "Student completed school Education",
         "description": "",
-        "id": "test-tagged-hooks;this-is-first-scenario",
-        "after": [
-          {
-            "result": {
-              "duration": 309700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ThanosHook.afterSnapping()"
-            }
-          },
-          {
-            "result": {
-              "duration": 663600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ThanosHook.aftertoAfterScenario()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 530620400,
+              "duration": 463766500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The Student finished high school",
+            "match": {
+              "location": "BackGroundExamplesStepDef.the_Student_finished_high_school()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 373400,
               "status": "passed"
             },
             "line": 6,
-            "name": "this is the first step",
+            "name": "The Student finished higher secoundary school",
             "match": {
-              "location": "StepDefinitionfortaggedHooks.this_is_the_first_step()"
+              "location": "BackGroundExamplesStepDef.the_Student_finished_higher_secoundary_school()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 550200,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "this is the scound step",
-            "match": {
-              "location": "StepDefinitionfortaggedHooks.this_is_the_scound_step()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1693500,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "This is the third step",
-            "match": {
-              "location": "StepDefinitionfortaggedHooks.this_is_the_third_step()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 4,
-            "name": "@First"
           }
         ]
       },
@@ -107,53 +39,26 @@
         "before": [
           {
             "result": {
-              "duration": 323000,
+              "duration": 1072800,
               "status": "passed"
             },
             "match": {
-              "location": "ThanosHook.beforetoBeforeScenario()"
-            }
-          },
-          {
-            "result": {
-              "duration": 462200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ThanosHook.beforeSnapping()"
+              "location": "BackGroundHook.executeBeforeFirstScenario()"
             }
           }
         ],
-        "line": 11,
-        "name": "This is Secound Scenario",
+        "line": 8,
+        "name": "To study Medicine",
         "description": "",
-        "id": "test-tagged-hooks;this-is-secound-scenario",
+        "id": "to-explain-the-usage-of-background;to-study-medicine",
         "after": [
           {
             "result": {
-              "duration": 589100,
+              "duration": 1985700,
               "status": "passed"
             },
             "match": {
-              "location": "TaggedHookDemo.executeAfterSecoundScenario()"
-            }
-          },
-          {
-            "result": {
-              "duration": 423400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ThanosHook.afterSnapping()"
-            }
-          },
-          {
-            "result": {
-              "duration": 153100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ThanosHook.aftertoAfterScenario()"
+              "location": "BackGroundHook.executeAfterSecoundScenario()"
             }
           }
         ],
@@ -162,150 +67,153 @@
         "steps": [
           {
             "result": {
-              "duration": 168800,
+              "duration": 194000,
               "status": "passed"
             },
-            "line": 12,
-            "name": "this is the first step",
+            "line": 9,
+            "name": "the student apply for the Medical course",
             "match": {
-              "location": "StepDefinitionfortaggedHooks.this_is_the_first_step()"
+              "location": "BackGroundExamplesStepDef.the_student_apply_for_the_Medical_course()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 444900,
+              "duration": 121200,
               "status": "passed"
             },
-            "line": 13,
-            "name": "this is the scound step",
+            "line": 10,
+            "name": "the student cleared the entrance exam",
             "match": {
-              "location": "StepDefinitionfortaggedHooks.this_is_the_scound_step()"
+              "location": "BackGroundExamplesStepDef.the_student_cleared_the_entrance_exam()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 414800,
+              "duration": 930100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the student is eligible for joining any Medical institute",
+            "match": {
+              "location": "BackGroundExamplesStepDef.the_student_is_eligible_for_joining_any_Medical_institute()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Student completed school Education",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 131400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The Student finished high school",
+            "match": {
+              "location": "BackGroundExamplesStepDef.the_Student_finished_high_school()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 342900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The Student finished higher secoundary school",
+            "match": {
+              "location": "BackGroundExamplesStepDef.the_Student_finished_higher_secoundary_school()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 601200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BackGroundHook.executeBeforeFirstScenario()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "To study Engineering",
+        "description": "",
+        "id": "to-explain-the-usage-of-background;to-study-engineering",
+        "after": [
+          {
+            "result": {
+              "duration": 2737100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BackGroundHook.executeAfterSecoundScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 733100,
               "status": "passed"
             },
             "line": 14,
-            "name": "This is the third step",
+            "name": "the student applied for the Engineering Course",
             "match": {
-              "location": "StepDefinitionfortaggedHooks.this_is_the_third_step()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 10,
-            "name": "@Secound"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 261300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ThanosHook.beforetoBeforeScenario()"
-            }
-          },
-          {
-            "result": {
-              "duration": 372000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ThanosHook.beforeSnapping()"
-            }
-          }
-        ],
-        "line": 17,
-        "name": "This is Third Scenario",
-        "description": "",
-        "id": "test-tagged-hooks;this-is-third-scenario",
-        "after": [
-          {
-            "result": {
-              "duration": 329400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ThanosHook.afterSnapping()"
-            }
-          },
-          {
-            "result": {
-              "duration": 375900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ThanosHook.aftertoAfterScenario()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2096200,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "this is the first step",
-            "match": {
-              "location": "StepDefinitionfortaggedHooks.this_is_the_first_step()"
+              "location": "BackGroundExamplesStepDef.the_student_applied_for_the_Engineering_Course()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 339200,
+              "duration": 441000,
               "status": "passed"
             },
-            "line": 19,
-            "name": "this is the scound step",
+            "line": 15,
+            "name": "the student has a sayable cut off",
             "match": {
-              "location": "StepDefinitionfortaggedHooks.this_is_the_scound_step()"
+              "location": "BackGroundExamplesStepDef.the_student_has_a_sayable_cut_off()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 439500,
+              "duration": 385900,
               "status": "passed"
             },
-            "line": 20,
-            "name": "This is the third step",
+            "line": 16,
+            "name": "the student is eligible for joining any Engineering institute",
             "match": {
-              "location": "StepDefinitionfortaggedHooks.this_is_the_third_step()"
+              "location": "BackGroundExamplesStepDef.the_student_is_eligible_for_joining_any_Engineering_institute()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 16,
-            "name": "@Third"
           }
         ]
       }
     ],
-    "name": "Test Tagged Hooks",
+    "name": "To explain the usage of background",
     "description": "",
-    "id": "test-tagged-hooks",
+    "id": "to-explain-the-usage-of-background",
     "keyword": "Feature",
-    "uri": "TaggedHook.feature",
+    "uri": "backgroudExample.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@TaggedHooks"
+        "name": "@Backgroundexamples"
       }
     ]
   }

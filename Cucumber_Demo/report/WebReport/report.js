@@ -1,221 +1,181 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("TaggedHook.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("backgroudExample.feature");
 formatter.feature({
   "line": 2,
-  "name": "Test Tagged Hooks",
+  "name": "To explain the usage of background",
   "description": "",
-  "id": "test-tagged-hooks",
+  "id": "to-explain-the-usage-of-background",
   "keyword": "Feature",
   "tags": [
     {
       "line": 1,
-      "name": "@TaggedHooks"
+      "name": "@Backgroundexamples"
     }
   ]
 });
 formatter.before({
-  "duration": 1672000,
+  "duration": 1072800,
   "status": "passed"
 });
-formatter.before({
-  "duration": 290300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 278800,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 5,
-  "name": "This is First Scenario",
+formatter.background({
+  "line": 4,
+  "name": "Student completed school Education",
   "description": "",
-  "id": "test-tagged-hooks;this-is-first-scenario",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 4,
-      "name": "@First"
-    }
-  ]
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 5,
+  "name": "The Student finished high school",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "this is the first step",
+  "name": "The Student finished higher secoundary school",
   "keyword": "Given "
 });
-formatter.step({
-  "line": 7,
-  "name": "this is the scound step",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "This is the third step",
-  "keyword": "Then "
-});
 formatter.match({
-  "location": "StepDefinitionfortaggedHooks.this_is_the_first_step()"
+  "location": "BackGroundExamplesStepDef.the_Student_finished_high_school()"
 });
 formatter.result({
-  "duration": 530620400,
+  "duration": 463766500,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinitionfortaggedHooks.this_is_the_scound_step()"
+  "location": "BackGroundExamplesStepDef.the_Student_finished_higher_secoundary_school()"
 });
 formatter.result({
-  "duration": 550200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinitionfortaggedHooks.this_is_the_third_step()"
-});
-formatter.result({
-  "duration": 1693500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 309700,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 663600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 323000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 462200,
+  "duration": 373400,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 11,
-  "name": "This is Secound Scenario",
+  "line": 8,
+  "name": "To study Medicine",
   "description": "",
-  "id": "test-tagged-hooks;this-is-secound-scenario",
+  "id": "to-explain-the-usage-of-background;to-study-medicine",
   "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 10,
-      "name": "@Secound"
-    }
-  ]
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 12,
-  "name": "this is the first step",
+  "line": 9,
+  "name": "the student apply for the Medical course",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 13,
-  "name": "this is the scound step",
+  "line": 10,
+  "name": "the student cleared the entrance exam",
   "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "the student is eligible for joining any Medical institute",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "BackGroundExamplesStepDef.the_student_apply_for_the_Medical_course()"
+});
+formatter.result({
+  "duration": 194000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BackGroundExamplesStepDef.the_student_cleared_the_entrance_exam()"
+});
+formatter.result({
+  "duration": 121200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BackGroundExamplesStepDef.the_student_is_eligible_for_joining_any_Medical_institute()"
+});
+formatter.result({
+  "duration": 930100,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 1985700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 601200,
+  "status": "passed"
+});
+formatter.background({
+  "line": 4,
+  "name": "Student completed school Education",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 5,
+  "name": "The Student finished high school",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 6,
+  "name": "The Student finished higher secoundary school",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "BackGroundExamplesStepDef.the_Student_finished_high_school()"
+});
+formatter.result({
+  "duration": 131400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BackGroundExamplesStepDef.the_Student_finished_higher_secoundary_school()"
+});
+formatter.result({
+  "duration": 342900,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 13,
+  "name": "To study Engineering",
+  "description": "",
+  "id": "to-explain-the-usage-of-background;to-study-engineering",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
   "line": 14,
-  "name": "This is the third step",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefinitionfortaggedHooks.this_is_the_first_step()"
-});
-formatter.result({
-  "duration": 168800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinitionfortaggedHooks.this_is_the_scound_step()"
-});
-formatter.result({
-  "duration": 444900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinitionfortaggedHooks.this_is_the_third_step()"
-});
-formatter.result({
-  "duration": 414800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 589100,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 423400,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 153100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 261300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 372000,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 17,
-  "name": "This is Third Scenario",
-  "description": "",
-  "id": "test-tagged-hooks;this-is-third-scenario",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 16,
-      "name": "@Third"
-    }
-  ]
-});
-formatter.step({
-  "line": 18,
-  "name": "this is the first step",
+  "name": "the student applied for the Engineering Course",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 19,
-  "name": "this is the scound step",
+  "line": 15,
+  "name": "the student has a sayable cut off",
   "keyword": "When "
 });
 formatter.step({
-  "line": 20,
-  "name": "This is the third step",
+  "line": 16,
+  "name": "the student is eligible for joining any Engineering institute",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "StepDefinitionfortaggedHooks.this_is_the_first_step()"
+  "location": "BackGroundExamplesStepDef.the_student_applied_for_the_Engineering_Course()"
 });
 formatter.result({
-  "duration": 2096200,
+  "duration": 733100,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinitionfortaggedHooks.this_is_the_scound_step()"
+  "location": "BackGroundExamplesStepDef.the_student_has_a_sayable_cut_off()"
 });
 formatter.result({
-  "duration": 339200,
+  "duration": 441000,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinitionfortaggedHooks.this_is_the_third_step()"
+  "location": "BackGroundExamplesStepDef.the_student_is_eligible_for_joining_any_Engineering_institute()"
 });
 formatter.result({
-  "duration": 439500,
+  "duration": 385900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 329400,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 375900,
+  "duration": 2737100,
   "status": "passed"
 });
 });

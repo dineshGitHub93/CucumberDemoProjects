@@ -7,6 +7,7 @@ import cucumber.api.java.Before;
 
 
 public class ThanosHook {
+	/*
 	
 	@Before(order = 1)
 	public void beforeSnapping() {
@@ -27,5 +28,5 @@ public class ThanosHook {
 	@After(order = 0)
 	public void aftertoAfterScenario() {
 		System.out.println("Finally thanos is also dying");
-	}
+	}*/
 }
