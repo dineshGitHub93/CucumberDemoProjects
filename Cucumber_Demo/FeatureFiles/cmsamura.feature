@@ -1,2 +1,2 @@
 Feature: Login file verification
-Scenario Outline:
+Scenario Outline: Login file 
